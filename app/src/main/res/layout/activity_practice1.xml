@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Practice1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:fontFamily="serif-monospace"
+        android:layout_gravity="center"
+        android:textSize="70dp"
+        android:textColor="#8C1840"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/liverpool"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log-in....."
+        android:fontFamily="@font/pinokioregular"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:textColor="#6A2008"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_design"
+        android:hint="Enter Email"
+        android:id="@+id/MailId"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_design"
+        android:hint="Enter password"
+        android:inputType="textWebPassword"
+        android:id="@+id/passwordID"
+        android:imeOptions="actionNext"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_design"
+            android:layout_margin="10dp">
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_design">
+    <Spinner
+        android:id="@+id/favtrSpinner"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:imeOptions="actionNext"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/salah"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:src="@drawable/mohmmadsalah"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/van"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:src="@drawable/vandijk"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/alison"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:src="@drawable/allisonbekar"/>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go...."
+        android:backgroundTint="#D3C1A8"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/pinokioregular"
+        android:textColor="#710909"
+        android:onClick="loginBtn"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
